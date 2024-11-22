@@ -44,8 +44,22 @@ class AAITestTaskCharacter : public ACharacter
 	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = Input, meta = (AllowPrivateAccess = "true"))
 	UInputAction* LookAction;
 
+	/** Small Attack Action */
+	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = Input, meta = (AllowPrivateAccess = "true"))
+	UInputAction* SmallAttackAction;
+
+	/** Big Attack Action */
+	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = Input, meta = (AllowPrivateAccess = "true"))
+	UInputAction* BigAttackAction;
+
 public:
 	AAITestTaskCharacter();
+
+	UFUNCTION(BlueprintNativeEvent, Category = "Attack")
+	void SmallAttack();
+
+	UFUNCTION(BlueprintNativeEvent, Category = "Attack")
+	void BigAttack();
 	
 
 protected:
@@ -55,9 +69,6 @@ protected:
 
 	/** Called for looking input */
 	void Look(const FInputActionValue& Value);
-			
-
-protected:
 
 	virtual void NotifyControllerChanged() override;
 
