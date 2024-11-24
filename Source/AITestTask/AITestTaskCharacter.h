@@ -55,10 +55,10 @@ class AAITestTaskCharacter : public ACharacter
 public:
 	AAITestTaskCharacter();
 
-	UFUNCTION(BlueprintNativeEvent, Category = "Attack")
+	UFUNCTION(BlueprintNativeEvent, BlueprintCallable, Category = "Attack")
 	void SmallAttack();
 
-	UFUNCTION(BlueprintNativeEvent, Category = "Attack")
+	UFUNCTION(BlueprintNativeEvent, BlueprintCallable, Category = "Attack")
 	void BigAttack();
 	
 
