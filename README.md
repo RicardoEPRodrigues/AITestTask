@@ -1,6 +1,6 @@
 # AI Test Task: Coordinated AI Behavior
 
-![Screenshot](https://github.com/RicardoEPRodrigues/AITestTask/blob/Media/Screenshot01.png?raw=true)
+![Screenshot](https://github.com/RicardoEPRodrigues/AITestTask/raw/refs/heads/main/Media/Screenshot01.png)
 
 This project showcases two NPCs working together in a basic combat scenario, utilizing modular AI techniques and dynamic difficulty adjustment.
 
